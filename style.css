@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+   background-image: url('https://wallpaperaccess.com/full/1653835.jpg');
+   scroll-behavior: smooth;
+  background-size:cover;
+}
+
+
+
+header {
+    background-color: transparent;
+    color: #f7317a;
+    padding: 10px;
+  margin: 20px;
+   text-align: right;
+}
+
+
+.navbar {
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+#mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0;
+}
+
+
+#mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+   transition: font-size 0.3 ease; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    font-size: 22px;
+    border-radius: 8px;
+    color: #f7317a;
+}
+
+
+.navbar-collapse {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar-collapse {
+        display: flex;
+    }
+  
+  h1 {
+    text-transform: uppercase;
+  }
+  
+  h2 {
+      letter-spacing: 0.3em;
+       color: #f7317a;
+      text-transform: uppercase;
+  }
+
+section {
+    padding: 3em;
+    text-align: center;
+    color: black;
+    letter-spacing: 0.2em;
+    line-height: 1.4;
+    margin:5;
+  }
+  
+  .wrapper{
+      align-items: center;
+       display: flex;
+       flex-direction: column;
+      flex-flow: row wrap;
+      position: relative;
+      margin: 0 auto;
+    max-width: 750px; 
+    width: 100%; /* Ensure the wrapper takes full width */
+}
+  
+  
+/* Styling for image containers */
+.image-container {
+    text-align: center;
+    padding: 5px;
+    width: 170px;
+    margin: 0 auto;
+    height: 170px;
+  transition: transform 0.3s ease;
+}
+
+.image-container img {
+    width: 100%; 
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    width: 110%;
+    height: 110%;
+    border-radius: 8px;
+    border: 2px solid #f7317a;
+}
+
+ .caption {
+       font-style: bold;
+       color: #555;
+       text-transform: uppercase;
+       text-align: center;
+       margin-right: 10px;
+       display: block;
+  }
+  
+
+footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.about-container{
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/833/561/small_2x/pink-pastel-sky-for-background-beautiful-romantic-dreamy-clouds-free-photo.jpg');
+    padding-left: 130px; 
+    padding-right: 120px;
+    text-align: left;
+  border: 2px solid #fff;
+  border-radius: 15px; 
+  background-size:cover;
+}
+  
+.popup {
+  
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #ffd4f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 90vh;
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+  
+  .project-image-container {
+    max-width: 300px; 
+    max-height: 350px; 
+    overflow: hidden; 
+   
+}
+
+.project-image-container img {
+    width: 90%; 
+    height: auto;
+    display: block; 
+   margin: 20px;
+}
+
+
+#academics {
+        padding: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .academic-entry {
+        width: calc(50% - 40px);
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    .academic-entry h2 {
+        color: #f7317a;
+        margin-bottom: 10px;
+    }
+
+    .academic-entry p {
+        color: #000;
+        margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+        .academic-entry {
+            width: calc(100% - 40px);
+        }
+    }
+  
+ /* Style for the Favorites section */
+#favorites {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.favorites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.favorite {
+    width: 250px; /* Set a fixed width for each hobby div */
+    margin: 20px 10px; /* Reduce the horizontal margin */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    padding: 20px;
+    color: #000;
+      
+
+}
+
+/* Additional styles for the hovered state */
+.favorite:hover {
+    transform: scale(1.05);
+    color:#f7317a;
+  /* Example transformation on hover */
+}
+  
+  .social-icons {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 20px;
+    color: #000; 
+  text-decoration: none; 
+    transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.social-icons a:hover {
+        color:#f7317a;
+
+}
+  
+  
+  .container p{
+    color:#000;
+  }

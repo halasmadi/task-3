@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="css\style.css">
+    <title>My Website</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <h1>Hala's Site</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#Favorites">Favorites</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Hala Smadi</h2>
+            <p>Welcome to my personal website!</p>
+        </div>
+    </section>
+  <br> </br>
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>My name is Hala, I'm 22 years old and I was born and raised in Jordan.
+                <br>I'm currently pursuing my bachelor studies in Computer Science Engineering in the University of Debrecen and I'm in my final semester.</br>
+                <br>I live in Debrecen, Hungary, which is the second biggest city in Hungary. my native language is Arabic and I am almost fluent in English as well.</br>
+                <br>MY birthday is on April 19th, 2001. And my horoscope is Aries.</br>
+                <br>Thank you for taking the time to view my work!</br>
+            </p>
+        </div>
+    </section>
+
+
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="wrapper">
+     <div class="image-container popup-trigger" data-popup="popup1">
+     <img src="images/image1.png" alt="Image 1" class="popup-trigger" data-popup="popup1">
+     <div class="caption">Shopping    App</div>
+</div>
+
+<div class="image-container popup-trigger" data-popup="popup2">
+    <img src="images/image2.png" alt="image 2" class="popup-trigger" data-popup="popup2">
+    <div class="caption">Sensor App</div>
+</div>
+
+<div class="image-container popup-trigger" data-popup="popup3">
+    <img src="images/image3.png" alt="image 3" class="popup-trigger" data-popup="popup3">
+    <div class="caption">Clickable 3D Cards</div>
+</div> 
+
+            </div>
+       
+    </section>
+
+    <section id="academics">
+        <div class="container">
+            <h2>Academics and Portfolio</h2>
+      <div class="wrapper">
+        
+        
+    <div class="academic-entry">
+        <h2>High School Diploma</h2>
+        <p><strong>Al-Jubeiha Seconday School</strong> </p>
+      <p> 2019 </p>
+      <p><strong>(Amman,Jordan)</strong> </p>
+        <p>I was studying in the national scientific field, and graduated with 81.9 GPA</p>
+    </div>
+        
+      <div class="academic-entry">
+        <h2>BSC in Computer Science Engineering</h2>
+        <p><strong>University of Debrecen</strong>, 2019-2024</p>
+        <p><Strong> (Debrecen, Hungary) </strong></p>
+        <p>I am currently pursuing my last semester, and set to graduate by January of 2024.</p>
+    </div>
+
+        
+        <div class="academic-entry">
+        <h2>Web Developer Internship</h2>
+          <p><strong>Limelight Renhold</strong></p>
+<p> Aug 2023 - Oct 2023</p>
+          <p><strong> (Oslo, Norway) </strong></p>
+        <p>I work on my internship from home by getting tasks from my Techlead and and work on front-end projects</p>
+    </div>
+        
+        
+        <div class="academic-entry">
+        <h2>Customer Service Representative</h2>
+        <p><strong>Transcosmos Kft</strong></p>
+          <p> Nov 2022 - Present</p>
+          <p> <Strong> (Debrecen, Hungary) </strong></p>
+        <p>I currently work part-time for Fossil Group as a CSR from Home.</p>
+    </div>
+        
+        </div>
+        </div>
+    </section>
+
+    <section id="Favorites">
+       <div class="favorites-container">
+            <h2>My Favorites!</h2>
+       <div class="favorite" onmouseover="changeText(this, 'Red and Pink :)')" onmouseout="resetText(this, 'Color')">
+            Color
+        </div>
+        <div class="favorite" onmouseover="changeText(this, 'Burgers, fries, and Middle Eastern rice dishes!')" onmouseout="resetText(this,'Food')">
+            Food
+        </div>
+         
+   <div class="favorite" onmouseover="changeText(this, 'Everlong - Foo Fighters')" onmouseout="resetText(this,'Song')">
+            Song
+        </div>
+         
+               
+   <div class="favorite" onmouseover="changeText(this, 'Winter')" onmouseout="resetText(this, 'Season')">
+            Season
+        </div>
+         
+                     
+   <div class="favorite" onmouseover="changeText(this, 'Coffee, Coffee, Coffee!')" onmouseout="resetText(this, 'Drink')">
+            Drink
+        </div>
+         
+                     
+   <div class="favorite" onmouseover="changeText(this, 'Deftones')" onmouseout="resetText(this, 'Free Time Activity')">
+            Band
+        </div>
+      
+    </div>
+</section>
+
+
+    <section id="contact">
+            <h2>Contact Me</h2>
+           <div class="container">
+             <div class="social-icons">
+    <a href="https://www.facebook.com/halasmadii/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="nkedin.com/in/hala-al-smadi-b429b2207/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/hala.smadiii/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+        <p> Or, fill out the form to get in touch:</p>
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdTcmvzbbWL7fnqQB5cE1Fg5SGupFnTnOnCubU12inq4xJ4A/viewform?embedded=true" width="600" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- popups -->
+
+
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup1')">&times;</span>
+      <div class="project-image-container">
+       <img src="images/shopapp.png" alt="shopping app" >
+      </div>
+      <p>I worked with a group of 4 people from my class for this project. We used IntelliJ and SceneBuilder.
+        <br>
+We created a shopping app with both user and admin functionalities. Users can log in, browse groceries, and add items to their cart. </br>
+       <br> The app has a unique feature that compares prices from three nearby markets for the selected items. It does this by checking a database containing prices of various items across these markets. After comparing prices, the app displays to the user which nearby market offers the cheapest total price for the items in their cart. This feature helps users make cost-effective purchasing decisions while grocery shopping.</br>
+</p>
+    </div>
+  </div>
+
+
+  <div class="popup" id="popup2">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup2')">&times;</span>
+      <div class="project-image-container">
+       <img src="images/ghost.png" alt="sensor app" >
+      </div>
+      <p>
+      I created a mobile sensor app using Java. The app detects changes in the phone's brightness level. When the brightness decreases below a certain threshold, it triggers the display of a ghost picture on the screen. <br>Conversely, when the brightness increases above a specific level, the ghost picture disappears. This app essentially responds to changes in ambient light, creating a fun and interactive experience where the ghost image appears and disappears based on the surrounding brightness.</br> 
+     </p>
+    </div>
+  </div>
+    
+  <div class="popup" id="popup3">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup3')">&times;</span>
+        <div class="project-image-container">
+       <img src="images/cards.png" alt="clickable cards" >
+          </div>
+      <p>I created interactive 3D cards to advertise different products. These clickable cards featured intricate 3D elements and smooth animations, providing users with an engaging and immersive experience. <br>The versatility of the project was showcased through the design of three unique cards, each tailored to showcase a specific product type. Overall, the project demonstrated creativity in combining technology and design to create compelling interactive advertisements. </br>
+    </p>
+      
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script src="script\script.js"></script>
+
+</body>
+
+</html>
